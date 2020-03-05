@@ -37,7 +37,7 @@ Note that you can automatically run all of the steps explained below by using `.
 
 1. **Create a directory for all source code and artifacts**
    
-   Let's create call this directory `MorphStore` and change into it:
+   Let's call this directory `MorphStore` and change into it:
 
    ```bash
    mkdir MorphStore
@@ -47,7 +47,7 @@ Note that you can automatically run all of the steps explained below by using `.
 2. **Clone required MorphStore repositories**
    
    MorphStore consists of a couple of individual repositories.
-   Here, we need to clone three of them: [Engine]() (MorphStore's holistic compression-enabled query execution engine), [Benchmarks]() (scripts and artifacts for running SSB), and [LC-BaSe]() (our cost-model for lightweight integer compression algorithms).
+   Here, we need to clone three of them: [Engine](https://github.com/MorphStore/Engine) (MorphStore's holistic compression-enabled query execution engine), [Benchmarks](https://github.com/MorphStore/Benchmarks) (scripts and artifacts for running SSB), and [LC-BaSe](https://github.com/MorphStore/LC-BaSe) (our cost-model for lightweight integer compression algorithms).
    
    ```bash
    git clone https://github.com/MorphStore/Engine.git
@@ -123,7 +123,38 @@ Note that you can automatically run all of the steps explained below by using `.
 
 ## Reproducing the Micro Benchmark Experiments
 
-*Coming soon!*
+Here, we assume that your present working directory is `VLDB-2020` and that it contains the directory `MorphStore` created by the setup steps above.
+Note that you can automatically run all of the steps explained below by using `./micro_benchmarks.sh`.
+
+1. **Change into the Engine repository**
+   
+   ```bash
+   cd Engine
+   ```
+
+2. **Build the executables for the micro benchmarks**
+
+   This is done using MorphStore's build script.
+   
+   ```bash
+   ./build.sh -noSelfManaging -hi -j2 -mon -avx512 -bMbm --target "select_benchmark_2_t select_sum_benchmark"
+   ```
+   
+3. **Run the micro benchmarks**
+
+   The evaluation results are written to the files `select_benchmark.csv` and `select_sum_benchmark.csv`.
+   Note that the following commands run each benchmark only once (in our evaluation, we repeated all measurements 10 times).
+   Especially the micro benchmark of the select-operator executes a lot of variants (even more than we show in the paper).
+   Thus, it may take about 20 minutes.
+   
+   ```bash
+   build/src/microbenchmarks/select_benchmark_2_t > select_benchmark.csv
+   build/src/microbenchmarks/select_sum_benchmark > select_sum_benchmark.csv
+   ```
+   
+4. **Analyze the Measurements**
+   
+   *Coming soon!*
 
 ## Reproducing the Star Schema Benchmark (SSB) Experiments
 
