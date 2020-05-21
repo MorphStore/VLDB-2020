@@ -30,7 +30,7 @@ function print_help () {
     echo "    'setup_eval_env.sh'."
     echo "  - To use the actual best or worst format combination w.r.t. "
     echo "    performance, you must have run the greedy algorithm to obtain "
-    echo "    them. (Details on this will follow soon.)" #TODO
+    echo "    them."
     echo ""
     echo "Optional arguments:"
     echo "  -h, --help             Show this help message and exit."

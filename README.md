@@ -161,7 +161,18 @@ Note that you can automatically run all of the steps explained below by using `.
 Here, we assume that your present working directory is `VLDB-2020` and that it contains the directory `MorphStore` created by the setup steps above.
 Please use the script `ssb_exp.sh` with arguments as presented below to run the experiments of Section 5.2 of our submission.
 
-1. **Run the SSB in MorphStore**
+1. **Determine the Best/Worst Format Combinations w.r.t. Performance Using Our Greedy Algorithm (Optional)**
+
+   To use the actual best/worst format combinations for the SSB experiments, you must first execute our greedy algorithm to obtain them.
+
+   ```bash
+   ./greedy.sh --findBest --findWorst
+   ```
+
+   Note that this may take about **1 day**.
+   However, you can skip this step and continue without taking the actual best/worst format combinations into account.
+
+2. **Run the SSB in MorphStore**
 
    `ssb_exp.sh` builds all 13 SSB queries (scale factor 10) and executes each of them 10 times with the following format combinations:
 
@@ -171,23 +182,21 @@ Please use the script `ssb_exp.sh` with arguments as presented below to run the 
    - the actual best format combination w.r.t. performance (AVX-512) (if you specify `--withActualBest`)
    - the actual worst format combination w.r.t. performance (AVX-512) (if you specify `--withActualWorst`)
 
-   To use the actual best/worst format combinations, you must first execute our greedy algorithm to obtain them.
-   **Details on this will follow soon!**
-   Furthermore, you can change the number of repetitions with with the argument `-r`.
+   Furthermore, you can change the number of repetitions with the argument `-r`.
 
    To sum up, for a quick trial, execute (may take about 3 minutes):
 
    ```bash
-   ./ssb.sh -r 1
+   ./ssb_exp.sh -r 1
    ```
 
    For our entire evalution, execute (may take about 45 minutes):
 
    ```bash
-   ./ssb.sh --withActualBest --withActualWorst
+   ./ssb_exp.sh --withActualBest --withActualWorst
    ```
 
-2. **Analyze the Measurements**
+3. **Analyze the Measurements**
 
    *Coming soon!*
 
