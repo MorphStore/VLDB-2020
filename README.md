@@ -202,4 +202,16 @@ Please use the script `ssb_exp.sh` with arguments as presented below to run the 
 
 ##  Reproducing the Comparison of MorphStore and MonetDB
 
+Again, we assume that your present working directory is `VLDB-2020` and that it contains the directory `MorphStore` created by the setup steps above.
+
+1. **Set up the Required Version of MonetDB**
+
+   ```bash
+   ./setup_monetdb.sh
+   ./monetdb_load.sh
+   ./monetdb_exp.sh
+   ```
+
+   Explanation and details coming soon.
+
 *Coming soon!*
