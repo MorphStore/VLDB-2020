@@ -1,15 +1,26 @@
 # MorphStore: Analytical Query Engine with a Holistic Compression-Enabled Processing Model
-## Experiments of our VLDB 2020 submission
 
-This repository contains all necessary instructions, scripts, etc. to reproduce the evaluation of our recent submission to VLDB 2020.
+Patrick Damme, Annett Ungethüm, Johannes Pietrzyk, Alexander Krause, Dirk Habich, Wolfgang Lehner:
+**MorphStore: Analytical Query Engine with a Holistic Compression-Enabled Processing Model.**
+*Proc. VLDB Endow. 13(11)*: 2396-2410 (2020)
+
+Open access via: [vldb.org](http://www.vldb.org/pvldb/vol13/p2396-damme.pdf) | arXiv.org (*coming soon*)
+
+## Experiments of our VLDB 2020 paper
+
+This repository contains
+- the *code* needed to reproduce our experiments (so far partly, to be finished soon)
+- all *artifacts* produced in our evaluation (coming soon)
+
+There are two kinds of experiments
+- *micro benchmarks* (Section 5.1 in the paper)
+- *Star Schema Benchmark* (Sections 5.2, 6, and 1 in the paper).
 
 **We are currently setting up this repository. Expect everything to be complete within the next couple of days.**
 
 The source code of MorphStore itself is already open-source: Check out our [Engine](https://github.com/MorphStore/Engine) and [Benchmarks](https://github.com/MorphStore/Benchmarks) repositories.
 
 ## System Requirements
-
-Your system should fulfill the following requirements to reproduce our evaluation:
 
 **Operating system**
 
@@ -21,197 +32,87 @@ Your system should fulfill the following requirements to reproduce our evaluatio
 - cmake (we tested 3.12 and 3.13)
 - make (we tested 4.1 and 4.2.1)
 - g++ (we used 8.3.0 and also tested 8.1.0)
+- numactl (optional)
 
 *Only for the Star Schema Benchmark:*
 - python3 (we tested 3.5.2 and 3.6.7)
 - pandas (we tested 0.24.2)
 
-**Hardware**
+**Hardware** (*to be stated more precisely*)
 - an Intel processor supporting AVX-512
-- about 20 GB of free disk space for the SSB base data (and some artifacts derived from it) at scale-factor 10
-- at least 16 GB of main memory
+- about 200 GB of free disk space for the SSB base data (and some artifacts derived from it) at scale factor 100
+- at least 96 GB of main memory (ideally per socket)
 
-## Setting up the Evaluation Environment
+## To Re-run the Entire Evaluation
 
-Note that you can automatically run all of the steps explained below by using `./setup_eval_env.sh`.
+```bash
+numactl -m 0 -N 0 -- ./vldb2020_microbenchmarks.sh
+numactl -m 0 -N 0 -- ./vldb2020_ssb.sh
+```
 
-1. **Create a directory for all source code and artifacts**
-   
-   Let's call this directory `MorphStore` and change into it:
+We used numactl to ensure that all memory allocation and code execution happens on the same socket to exclude NUMA effects.
+You can omit numactl at the risk of compromising the measurements.
 
-   ```bash
-   mkdir MorphStore
-   cd MorphStore
-   ```
-   
-2. **Clone required MorphStore repositories**
-   
-   MorphStore consists of a couple of individual repositories.
-   Here, we need to clone three of them: [Engine](https://github.com/MorphStore/Engine) (MorphStore's holistic compression-enabled query execution engine), [Benchmarks](https://github.com/MorphStore/Benchmarks) (scripts and artifacts for running SSB), and [LC-BaSe](https://github.com/MorphStore/LC-BaSe) (our cost-model for lightweight integer compression algorithms).
-   
-   ```bash
-   git clone https://github.com/MorphStore/Engine.git
-   git clone https://github.com/MorphStore/Benchmarks.git
-   git clone https://github.com/MorphStore/LC-BaSe.git
-   ```
-   
-*If you only want to reproduce the micro benchmarks, you can actually stop the setup here.*
-   
-3. **Obtain the Star Schema Benchmark data generator**
-   
-   We recommend to use the [StarSchemaBenchmark](https://github.com/lemire/StarSchemaBenchmark) repository provided by Daniel Lemire.
-   
-   ```bash
-   git clone https://github.com/lemire/StarSchemaBenchmark.git
-   mv StarSchemaBenchmark ssb-dbgen
-   ```
-   
-4. **Generate the SSB base data**
+## Micro Benchmarks
 
-   This includes (i) the compilation of the SSB data generator, (ii) the SSB base data generation, and (iii) the dictionary encoding of the generated data.
-   This setup step has not been optimized for performance, it may take about 20 minutes.
-   
-   ```bash
-   cd Benchmarks/ssb
-   ./ssb.sh -e g -um s -sf 10
-   ```
-   
-5. **Check if things work for the purely uncompressed processing**
-   
-   Let's execute all SSB queries on purely uncompressed data.
-   First with a scalar execution.
-   
-   ```bash
-   ./ssb.sh -s t -um s -sf 10
-   ```
-   
-   Then, vectorized with AVX-512.
-   
-   ```bash
-   ./ssb.sh -s t -um s -sf 10 -ps "avx512<v512<uint64_t>>"
-   ```
-   
-   In both cases, in the end, you should see the following:
-   
-   ```
-   ssb q1.1: good
-   ssb q1.2: good
-   ssb q1.3: good
-   ssb q2.1: good
-   ssb q2.2: good
-   ssb q2.3: good
-   ssb q3.1: good
-   ssb q3.2: good
-   ssb q3.3: good
-   ssb q3.4: good
-   ssb q4.1: good
-   ssb q4.2: good
-   ssb q4.3: good
-   ```
-   
-   If the output says `BAD` for some query, then something went wrong, which should actually not be the case...
-   
-4. **Produce all artifacts required for using compression**
-   
-   This includes (i) the analysis of the data characteristics of all base columns and intermediates, (ii) exhaustively finding out the physical size of all base and intermediate columns in all compressed formats, and (iii) the calibration of our cost model for lightweight integer compression algorithms.
-   Not all of these things are needed for all compression-related features of MorphStore, however, for simplicity of explanation, we do all these things here.
-   Again, this setup step has not been optimized for performance, it may take about 40 minutes.
-   
-   ```bash
-   ./prepare4compr.sh -sf 10 -maxps avx512 -r 1
-   ```
+*Description coming soon!*
 
-## Reproducing the Micro Benchmark Experiments
+## Star Schema Benchmark (SSB)
 
-Here, we assume that your present working directory is `VLDB-2020` and that it contains the directory `MorphStore` created by the setup steps above.
-Note that you can automatically run all of the steps explained below by using `./micro_benchmarks.sh`.
+You can re-run the experiments in Sections 5.2, 6, and 1 in the paper by `numactl -m 0 -N 0 -- ./vldb2020_ssb.sh`.
 
-1. **Change into the Engine repository**
-   
-   ```bash
-   cd Engine
-   ```
+### Steps
 
-2. **Build the executables for the micro benchmarks**
+This script executes the following sequence of steps:
 
-   This is done using MorphStore's build script.
-   
-   ```bash
-   ./build.sh -noSelfManaging -hi -j2 -mon -avx512 -bMbm --target "select_benchmark_2_t select_sum_benchmark"
-   ```
-   
-3. **Run the micro benchmarks**
+1. **setup (s)**
+  - downloads and compiles the SSB data generator
+  - downloads and compiles MonetDB
+2. **calibrate (c)**
+  - compiles and executes the micro benchmarks for calibrating our cost model for lightweight integer compression algorithms in MorphStore
+3. **generate (g)**
+  - generates the raw base data
+  - applies dictionary coding to all non-integer columns
+  - prepares base column files for use in MorphStore
+  - loads base data into MonetDB
+    - one instance with all columns of type BIGINT
+    - one instance with each column of the narrowest possible integer type
+  - derives some artifacts required for the evaluation
+    - data characteristics of all base and intermediate columns
+    - compressed sizes of all base and intermediate columns in all compressed formats currently supported
+    - best and worst combinations of the base and intermediate columns' formats (greedy algorithm mentioned in the paper)
+4. **run (r)**
+  - executes the SSB in MorphStore using different strategies to determine the compressed formats of the base columns and intermediates
+  - executes the SSB in MonetDB on both instances (BIGINT and narrow)
+5. **visualize (v)**
+  - generates the diagrams in the paper from the experiments‘ measurements
+  - *coming soon!*
+  
+### Arguments
 
-   The evaluation results are written to the files `select_benchmark.csv` and `select_sum_benchmark.csv`.
-   Note that the following commands run each benchmark only once (in our evaluation, we repeated all measurements 10 times).
-   Especially the micro benchmark of the select-operator executes a lot of variants (even more than we show in the paper).
-   Thus, it may take about 20 minutes.
-   
-   ```bash
-   build/src/microbenchmarks/select_benchmark_2_t > select_benchmark.csv
-   build/src/microbenchmarks/select_sum_benchmark > select_sum_benchmark.csv
-   ```
-   
-4. **Analyze the Measurements**
-   
-   *Coming soon!*
+Invoke `vldb2020_ssb.sh` without arguments to execute all steps using the parameters we used in our evaluation.
 
-## Reproducing the Star Schema Benchmark (SSB) Experiments
+The script also offers some arguments (see `./vldb2020_ssb.sh --help` for details (*coming soon*)).
+However, *note that not using the defaults might result in different experimental results than in the paper*, which would require thorough interpretation.
 
-Here, we assume that your present working directory is `VLDB-2020` and that it contains the directory `MorphStore` created by the setup steps above.
-Please use the script `ssb_exp.sh` with arguments as presented below to run the experiments of Section 5.2 of our submission.
+argument | default | other examples
+--- | --- | ---
+-s, --start | setup | setup, calibrate, generate, run, visualize
+-e, --end | visualize | *see above*
+-sf, --scaleFactor | 100 | 1, 10, ...
+-q, --queries | *all* | 1.1, "2.1 2.2 2.3"
+-r, --repetitions | 10 | 1, ...
+-ps, --processingStyle | avx512<v512<uint64_t>> | scalar<v64<uint64_t>>, sse<v128<uint64_t>>, avx2<v256<uint64_t>>
 
-1. **Determine the Best/Worst Format Combinations w.r.t. Performance Using Our Greedy Algorithm (Optional)**
+The `--start` and `--end` arguments can be used to control which steps to (re-)execute.
+Furthermore, you can use the optional arguments `--withoutMorphStore` or `--withoutMonetDB` to **not** use the respective system.
+This might be useful if you are not interested in one of them, or have dependency issues you don't want to fix right now.
 
-   To use the actual best/worst format combinations for the SSB experiments, you must first execute our greedy algorithm to obtain them.
+Deviating from the defaults can allow you to
+- execute the experiments on a processor not supporting AVX-512 (expect different results than in the paper)
+- quickly execute the entire script to test/debug it, e.g. by `./vldb2020_ssb.sh -sf 1 -q 1.1 -r 1`
+- or anything else experimental
 
-   ```bash
-   ./greedy.sh --findBest --findWorst
-   ```
+## Generated Artifacts
 
-   Note that this may take about **1 day**.
-   However, you can skip this step and continue without taking the actual best/worst format combinations into account.
-
-2. **Run the SSB in MorphStore**
-
-   `ssb_exp.sh` builds all 13 SSB queries (scale factor 10) and executes each of them 10 times with the following format combinations:
-
-   - purely uncompressed (scalar)
-   - purely uncompressed (AVX-512)
-   - Static BP for all columns (AVX-512)
-   - the actual best format combination w.r.t. performance (AVX-512) (if you specify `--withActualBest`)
-   - the actual worst format combination w.r.t. performance (AVX-512) (if you specify `--withActualWorst`)
-
-   Furthermore, you can change the number of repetitions with the argument `-r`.
-
-   To sum up, for a quick trial, execute (may take about 3 minutes):
-
-   ```bash
-   ./ssb_exp.sh -r 1
-   ```
-
-   For our entire evalution, execute (may take about 45 minutes):
-
-   ```bash
-   ./ssb_exp.sh --withActualBest --withActualWorst
-   ```
-
-3. **Analyze the Measurements**
-
-   *Coming soon!*
-
-##  Reproducing the Comparison of MorphStore and MonetDB
-
-Again, we assume that your present working directory is `VLDB-2020` and that it contains the directory `MorphStore` created by the setup steps above.
-
-1. **Set up the Required Version of MonetDB**
-
-   ```bash
-   ./setup_monetdb.sh
-   ./monetdb_load.sh
-   ./monetdb_exp.sh
-   ```
-
-   Explanation and details coming soon.
-
-*Coming soon!*
+*Description coming soon!*
