@@ -1,0 +1,12 @@
+[submodule "MorphStore/Engine"]
+	path = MorphStore/Engine
+	url = https://github.com/MorphStore/Engine.git
+[submodule "MorphStore/Benchmarks"]
+	path = MorphStore/Benchmarks
+	url = https://github.com/MorphStore/Benchmarks.git
+[submodule "MorphStore/LC-BaSe"]
+	path = MorphStore/LC-BaSe
+	url = https://github.com/MorphStore/LC-BaSe.git
+[submodule "MorphStore/TVLLib"]
+	path = MorphStore/TVLLib
+	url = https://github.com/MorphStore/TVLLib.git
