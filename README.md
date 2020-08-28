@@ -55,7 +55,32 @@ You can omit numactl at the risk of compromising the measurements.
 
 ## Micro Benchmarks
 
-*Description coming soon!*
+You can re-run the experiments in Section 5.1 by `numactl -m 0 -N 0 -- ./vldb_microbenchmarks.sh`.
+
+### Steps
+
+This script executes the following sequence of steps:
+
+1. **compile (c)**: compiles the executables for the micro benchmarks
+2. **run (r)**: executes the micro benchmarks
+3. **visualize (v)**: generates the diagrams in the paper from the experiments' measurements
+
+### Arguments
+
+Invoke `vldb2020_microbenchmarks.sh` without arguments to execute all steps using the parameters we used in our evaluation.
+
+The script also offers some arguments (see `./vldb2020_microbenchmarks.sh --help` for details (*coming soon*)).
+However, *note that not using the defaults might result in different experimental results than in the paper*, which would require thorough interpretation.
+
+argument | default | other examples
+--- | --- | ---
+-s, --start | compile | compile, run, visualize
+-e, --end | visualize | *see above*
+-r, --repetitions | 10 | 1, ...
+-ps, --processingStyle | avx512<v512<uint64_t>> | scalar<v64<uint64_t>>, sse<v128<uint64_t>>, avx2<v256<uint64_t>>
+
+The `--start` and `--end` arguments can be used to control which steps to (re-)execute.
+Furthermore, you can use the optional arguments `--onlyExample`, `--onlySingleOp`, or `--onlySimpleQuery` to reproduce each of the three parts of the micro benchmarks in the paper separately.
 
 ## Star Schema Benchmark (SSB)
 
