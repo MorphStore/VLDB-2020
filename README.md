@@ -38,6 +38,10 @@ The source code of MorphStore itself is already open-source: Check out our [Engi
 - python3 (we tested 3.5.2 and 3.6.7)
 - pandas (we tested 0.24.2)
 
+*Only for the diagram generation:*
+- matplotlib (we used 3.0.3)
+- seaborn (we used 0.9.0)
+
 **Hardware** (*to be stated more precisely*)
 - an Intel processor supporting AVX-512
 - about 200 GB of free disk space for the SSB base data (and some artifacts derived from it) at scale factor 100
@@ -110,8 +114,7 @@ This script executes the following sequence of steps:
   - executes the SSB in MorphStore using different strategies to determine the compressed formats of the base columns and intermediates
   - executes the SSB in MonetDB on both instances (BIGINT and narrow)
 5. **visualize (v)**
-  - generates the diagrams in the paper from the experiments‘ measurements
-  - *coming soon!*
+  - generates the diagrams in the paper (Figures 1, 7, 8, 9, 10) from the experiments' measurements
   
 ### Arguments
 

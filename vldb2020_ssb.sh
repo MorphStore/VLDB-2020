@@ -264,7 +264,17 @@ function visualize () {
 
     set -e
 
-    ### TODO Add this.
+    if [[ ! $useMorphStore ]]
+    then
+        local argWithoutMorphStore="--withoutMorphStore"
+    fi
+    if [[ ! $useMonetDB ]]
+    then
+        local argWithoutMonetDB="--withoutMonetDB"
+    fi
+
+    # Note: $queries must not be in quotation marks here.
+    scripts/dias_ssb.py -sf $scaleFactor -ps $processingStyle -r $repetitions -q $queries $argWithoutMorphStore $argWithoutMonetDB
 
     set +e
 
