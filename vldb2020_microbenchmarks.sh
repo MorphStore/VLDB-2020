@@ -91,7 +91,21 @@ function visualize () {
 
     set -e
 
-    ### TODO Add this.
+    if [[ $useExample && $useSingleOp && $useSimpleQuery ]]
+    then
+        local argOnly=""
+    elif [[ $useExample ]]
+    then
+        local argOnly="--onlyExample"
+    elif [[ $useSingleOp ]]
+    then
+        local argOnly="--onlySingleOp"
+    elif [[ $useSimpleQuery ]]
+    then
+        local argOnly="--onlySimpleQuery"
+    fi
+
+    scripts/dias_microbenchmarks.py -ps $processingStyle -r $repetitions $argOnly
 
     set +e
 

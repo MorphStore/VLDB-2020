@@ -18,6 +18,9 @@ There are two kinds of experiments
 
 **We are currently setting up this repository. Expect everything to be complete within the next couple of days.**
 
+The source code for conducting the experiments and visualizing the measurements is already complete.
+Only our experimental artifacts and some more documentation are still missing (see the issues in GitHub).
+
 The source code of MorphStore itself is already open-source: Check out our [Engine](https://github.com/MorphStore/Engine) and [Benchmarks](https://github.com/MorphStore/Benchmarks) repositories.
 
 ## System Requirements

@@ -26,6 +26,8 @@ import mal2morphstore.formats as formats
 import mal2morphstore.processingstyles as pss
 import csvutils
 
+import utils
+
 # *****************************************************************************
 # Utility functions
 # *****************************************************************************
@@ -297,29 +299,6 @@ def _drawDia(hueCol, hueOrder, palette, dfMem, dfPerf, rowH=3):
         ax.get_legend().remove()
     sns.despine()
     fig.tight_layout()
-    
-def _drawLegend(labels, colors):
-    """Generates a legend in an individual matplotlib figure."""
-    
-    fig = plt.figure()
-    generalRectProps = dict(linewidth=1, edgecolor="black", clip_on=False)
-    fig.legend(
-        [
-            patches.Rectangle((0, 0), 1, 1, **generalRectProps, facecolor=color)
-            for color in colors
-        ],
-        labels,
-        ncol=999, frameon=False,
-        handlelength=1, columnspacing=1
-    )
-
-def _saveFig(filename):
-    """Saves the current matplotlib figure to a file."""
-    
-    plt.savefig(
-            os.path.join(pathDias, "{}.pdf".format(filename)),
-            bbox_inches="tight"
-    )
 
 # -----------------------------------------------------------------------------
 # Generation of the individual diagrams in the paper.
@@ -353,7 +332,7 @@ def drawFigure1():
     ax2.set_yticks([])
     fig.tight_layout()
     sns.despine()
-    _saveFig("figure01_teaser")
+    utils.saveFig("figure01_teaser")
 
 def drawFigure7():
     """Draws Figure 7 (impact of the format combination)."""
@@ -365,10 +344,10 @@ def drawFigure7():
     filename = "figure07_ssb_formats"
 
     _drawDia("cs", order, colors, dfMemMorphStore, dfPerfMorphStore)
-    _saveFig(filename)
+    utils.saveFig(filename)
 
-    _drawLegend(labels, colors)
-    _saveFig(filename + "_legend")
+    utils.drawLegendRect(labels, colors)
+    utils.saveFig(filename + "_legend")
 
 def drawFigure8():
     """Draws Figure 8 (compression of base data vs. intermediates)."""
@@ -380,10 +359,10 @@ def drawFigure8():
     filename = "figure08_ssb_base_vs_interm"
 
     _drawDia("cs", order, colors, dfMemMorphStore, dfPerfMorphStore)
-    _saveFig(filename)
+    utils.saveFig(filename)
 
-    _drawLegend(labels, colors)
-    _saveFig(filename + "_legend")
+    utils.drawLegendRect(labels, colors)
+    utils.saveFig(filename + "_legend")
 
 def drawFigure10():
     """Draws Figure 10 (fitness of our cost-based format selection)."""
@@ -395,10 +374,10 @@ def drawFigure10():
     filename = "figure10_opt"
 
     _drawDia("cs", order, colors, dfMemMorphStore, dfPerfMorphStore)
-    _saveFig(filename)
+    utils.saveFig(filename)
 
-    _drawLegend(labels, colors)
-    _saveFig(filename + "_legend")
+    utils.drawLegendRect(labels, colors)
+    utils.saveFig(filename + "_legend")
 
 def drawFigure9():
     """Draws Figure 9 (comparision of MorphStore and MonetDB)."""
@@ -456,10 +435,10 @@ def drawFigure9():
     _drawDia("candidate", order, colors, None, dfComp, 3.09)
     ax = plt.gca()
     ax.set_title(ax.get_title()[4:]) # remove the letter "(a)" in the title
-    _saveFig(filename)
+    utils.saveFig(filename)
 
-    _drawLegend(labels, colors)
-    _saveFig(filename + "_legend")
+    utils.drawLegendRect(labels, colors)
+    utils.saveFig(filename + "_legend")
     
 
 # *****************************************************************************
@@ -621,29 +600,22 @@ if __name__ == "__main__":
     colorYellow = "#f8d35e"
     colorOrange = "#ffa300"
     
-    def setMatplotlibRcParamsLikeInJupyterNotebook():
-        # We originally created the diagrams in a jupyter notebook. In that
-        # environment, some rcParams of matplotlib are different. To obtain
-        # exactly the same diagram sizes etc., we explicitly use these rcParams
-        # here, but this is not critical for the diagram generation.
-        mpl.rcParams["figure.dpi"] = 72.0
-        mpl.rcParams["figure.subplot.bottom"] = 0.125
-        mpl.rcParams["font.size"] = 10.0
-        
+    utils.pathDias = pathDias
+    
     if useMorphStore:
         sns.set_context("talk", 1.0)
-        setMatplotlibRcParamsLikeInJupyterNotebook()
+        utils.setMatplotlibRcParamsLikeInJupyterNotebook()
         drawFigure1()
         
         sns.set_context("talk", 1.1)
-        setMatplotlibRcParamsLikeInJupyterNotebook()
+        utils.setMatplotlibRcParamsLikeInJupyterNotebook()
         drawFigure7()
         drawFigure8()
         drawFigure10()
         
     if useMorphStore or useMonetDB:
         sns.set_context("talk", 1.1)
-        setMatplotlibRcParamsLikeInJupyterNotebook()
+        utils.setMatplotlibRcParamsLikeInJupyterNotebook()
         drawFigure9()
     
     print("done.")
