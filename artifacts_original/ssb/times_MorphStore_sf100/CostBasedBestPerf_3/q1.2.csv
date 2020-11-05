@@ -1,0 +1,20 @@
+LogFilename: 2020-06-15-15:29:11_monitoringLog
+JSonLogFilename: 2020-06-15-15:29:11_monitoringLog
+[MEA]
+opName	opIdx	runtime
+query	0	3486699
+between	1	759716
+between	2	715537
+intersect_sorted	3	1194275
+my_project_wit_t	4	215632
+select	5	5
+my_project_wit_t	6	9
+semi_join	7	324386
+my_project_wit_t	8	213731
+my_project_wit_t	9	6045
+my_project_wit_t	10	53336
+my_project_wit_t	11	2206
+calc_binary	12	1630
+agg_sum	13	142
+[RES]
+9643134347139

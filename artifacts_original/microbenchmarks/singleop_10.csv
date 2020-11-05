@@ -1,0 +1,303 @@
+LogFilename: 2020-02-02-06:37:51_monitoringLog
+JSonLogFilename: 2020-02-02-06:37:51_monitoringLog
+vector_extension	out_pos_f	in_data_f	pred	datasetIdx	runtime:µs	runtime select:µs	check
+avx512<v512<uint64_t>>	uncompr_f	uncompr_f	0	1	96123	96119	-1
+avx512<v512<uint64_t>>	uncompr_f	static_vbp_f<vbp_l<bw, 8> >	0	1	32826	32821	1
+avx512<v512<uint64_t>>	uncompr_f	dynamic_vbp_f<512, 64, 8>	0	1	34980	34970	1
+avx512<v512<uint64_t>>	uncompr_f	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	1	148333	148324	1
+avx512<v512<uint64_t>>	uncompr_f	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	1	70230	70224	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	uncompr_f	0	1	97733	97727	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	static_vbp_f<vbp_l<bw, 8> >	0	1	29316	29310	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	dynamic_vbp_f<512, 64, 8>	0	1	31900	31892	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	1	142308	142301	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	1	69942	69935	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	uncompr_f	0	1	97520	97513	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	static_vbp_f<vbp_l<bw, 8> >	0	1	29254	29246	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	dynamic_vbp_f<512, 64, 8>	0	1	31797	31788	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	1	161152	161142	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	1	72725	72716	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	uncompr_f	0	1	96543	96535	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	static_vbp_f<vbp_l<bw, 8> >	0	1	28329	28320	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	dynamic_vbp_f<512, 64, 8>	0	1	31082	31073	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	1	166013	166001	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	1	72339	72329	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	uncompr_f	0	1	97320	97310	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	static_vbp_f<vbp_l<bw, 8> >	0	1	28936	28926	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	dynamic_vbp_f<512, 64, 8>	0	1	31294	31284	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	1	160902	160889	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	1	70160	70147	1
+avx512<v512<uint64_t>>	uncompr_f	uncompr_f	0	2	96087	96075	-1
+avx512<v512<uint64_t>>	uncompr_f	static_vbp_f<vbp_l<bw, 8> >	0	2	105494	105481	1
+avx512<v512<uint64_t>>	uncompr_f	dynamic_vbp_f<512, 64, 8>	0	2	38693	38681	1
+avx512<v512<uint64_t>>	uncompr_f	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	2	144550	144537	1
+avx512<v512<uint64_t>>	uncompr_f	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	2	74141	74128	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	uncompr_f	0	2	97715	97702	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	static_vbp_f<vbp_l<bw, 8> >	0	2	108916	108901	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	dynamic_vbp_f<512, 64, 8>	0	2	35667	35652	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	2	142404	142389	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	2	73617	73602	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	uncompr_f	0	2	97481	97466	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	static_vbp_f<vbp_l<bw, 8> >	0	2	104951	104936	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	dynamic_vbp_f<512, 64, 8>	0	2	35526	35511	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	2	160905	160888	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	2	82594	82577	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	uncompr_f	0	2	96305	96290	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	static_vbp_f<vbp_l<bw, 8> >	0	2	103498	103482	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	dynamic_vbp_f<512, 64, 8>	0	2	34951	34933	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	2	159729	159711	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	2	76171	76154	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	uncompr_f	0	2	97286	97268	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	static_vbp_f<vbp_l<bw, 8> >	0	2	104897	104879	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	dynamic_vbp_f<512, 64, 8>	0	2	35189	35170	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	2	160888	160867	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	2	74043	74023	1
+avx512<v512<uint64_t>>	uncompr_f	uncompr_f	4611686018427387904	3	96159	96140	-1
+avx512<v512<uint64_t>>	uncompr_f	static_vbp_f<vbp_l<bw, 8> >	4611686018427387904	3	105242	105222	1
+avx512<v512<uint64_t>>	uncompr_f	dynamic_vbp_f<512, 64, 8>	4611686018427387904	3	106303	106282	1
+avx512<v512<uint64_t>>	uncompr_f	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	4611686018427387904	3	144123	144104	1
+avx512<v512<uint64_t>>	uncompr_f	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	4611686018427387904	3	70272	70251	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	uncompr_f	4611686018427387904	3	97696	97678	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	static_vbp_f<vbp_l<bw, 8> >	4611686018427387904	3	105093	105073	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	dynamic_vbp_f<512, 64, 8>	4611686018427387904	3	106141	106120	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	4611686018427387904	3	142935	142913	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	4611686018427387904	3	69980	69959	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	uncompr_f	4611686018427387904	3	97552	97530	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	static_vbp_f<vbp_l<bw, 8> >	4611686018427387904	3	105153	105130	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	dynamic_vbp_f<512, 64, 8>	4611686018427387904	3	106301	106278	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	4611686018427387904	3	160964	160941	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	4611686018427387904	3	72647	72624	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	uncompr_f	4611686018427387904	3	96591	96569	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	static_vbp_f<vbp_l<bw, 8> >	4611686018427387904	3	103622	103599	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	dynamic_vbp_f<512, 64, 8>	4611686018427387904	3	104664	104640	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	4611686018427387904	3	160046	160021	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	4611686018427387904	3	72343	72319	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	uncompr_f	4611686018427387904	3	97340	97316	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	static_vbp_f<vbp_l<bw, 8> >	4611686018427387904	3	104740	104715	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	dynamic_vbp_f<512, 64, 8>	4611686018427387904	3	105737	105712	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	4611686018427387904	3	164874	164846	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	4611686018427387904	3	70571	70544	1
+avx512<v512<uint64_t>>	uncompr_f	uncompr_f	0	4	93032	93004	-1
+avx512<v512<uint64_t>>	uncompr_f	static_vbp_f<vbp_l<bw, 8> >	0	4	43261	43235	1
+avx512<v512<uint64_t>>	uncompr_f	dynamic_vbp_f<512, 64, 8>	0	4	36913	36885	1
+avx512<v512<uint64_t>>	uncompr_f	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	4	46875	46850	1
+avx512<v512<uint64_t>>	uncompr_f	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	4	65604	65579	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	uncompr_f	0	4	94824	94799	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	static_vbp_f<vbp_l<bw, 8> >	0	4	40669	40641	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	dynamic_vbp_f<512, 64, 8>	0	4	34790	34762	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	4	44657	44630	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	4	65605	65578	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	uncompr_f	0	4	93634	93608	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	static_vbp_f<vbp_l<bw, 8> >	0	4	40073	40044	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	dynamic_vbp_f<512, 64, 8>	0	4	33986	33957	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	4	63330	63301	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	4	67395	67367	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	uncompr_f	0	4	92656	92632	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	static_vbp_f<vbp_l<bw, 8> >	0	4	38602	38574	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	dynamic_vbp_f<512, 64, 8>	0	4	33336	33307	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	4	62150	62123	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	4	66575	66551	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	uncompr_f	0	4	99147	99126	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	static_vbp_f<vbp_l<bw, 8> >	0	4	39526	39495	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	dynamic_vbp_f<512, 64, 8>	0	4	33374	33343	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	4	62894	62866	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	4	64633	64605	1
+avx512<v512<uint64_t>>	uncompr_f	uncompr_f	140737488355328	5	99305	99272	-1
+avx512<v512<uint64_t>>	uncompr_f	static_vbp_f<vbp_l<bw, 8> >	140737488355328	5	74108	74074	1
+avx512<v512<uint64_t>>	uncompr_f	dynamic_vbp_f<512, 64, 8>	140737488355328	5	74779	74746	1
+avx512<v512<uint64_t>>	uncompr_f	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	140737488355328	5	46884	46851	1
+avx512<v512<uint64_t>>	uncompr_f	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	140737488355328	5	65561	65529	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	uncompr_f	140737488355328	5	94978	94947	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	static_vbp_f<vbp_l<bw, 8> >	140737488355328	5	72225	72190	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	dynamic_vbp_f<512, 64, 8>	140737488355328	5	73434	73399	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	140737488355328	5	44572	44538	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	140737488355328	5	65601	65567	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	uncompr_f	140737488355328	5	93674	93642	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	static_vbp_f<vbp_l<bw, 8> >	140737488355328	5	72540	72505	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	dynamic_vbp_f<512, 64, 8>	140737488355328	5	72801	72765	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	140737488355328	5	63287	63251	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	140737488355328	5	67153	67118	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	uncompr_f	140737488355328	5	92873	92847	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	static_vbp_f<vbp_l<bw, 8> >	140737488355328	5	71551	71514	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	dynamic_vbp_f<512, 64, 8>	140737488355328	5	78091	78056	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	140737488355328	5	62274	62236	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	140737488355328	5	66635	66600	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	uncompr_f	140737488355328	5	93545	93515	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	static_vbp_f<vbp_l<bw, 8> >	140737488355328	5	72667	72630	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	dynamic_vbp_f<512, 64, 8>	140737488355328	5	72575	72537	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	140737488355328	5	62560	62522	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	140737488355328	5	64663	64625	1
+avx512<v512<uint64_t>>	uncompr_f	uncompr_f	0	6	102049	102009	-1
+avx512<v512<uint64_t>>	uncompr_f	static_vbp_f<vbp_l<bw, 8> >	0	6	105637	105597	1
+avx512<v512<uint64_t>>	uncompr_f	dynamic_vbp_f<512, 64, 8>	0	6	106009	105969	1
+avx512<v512<uint64_t>>	uncompr_f	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	6	144450	144409	1
+avx512<v512<uint64_t>>	uncompr_f	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	6	149217	149176	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	uncompr_f	0	6	97841	97802	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	static_vbp_f<vbp_l<bw, 8> >	0	6	104974	104933	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	dynamic_vbp_f<512, 64, 8>	0	6	106180	106138	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	6	142422	142380	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	6	150527	150484	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	uncompr_f	0	6	97619	97575	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	static_vbp_f<vbp_l<bw, 8> >	0	6	105191	105146	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	dynamic_vbp_f<512, 64, 8>	0	6	105775	105731	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	6	167282	167237	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	6	153419	153376	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	uncompr_f	0	6	96455	96410	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	static_vbp_f<vbp_l<bw, 8> >	0	6	103601	103558	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	dynamic_vbp_f<512, 64, 8>	0	6	110673	110627	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	6	159758	159712	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	6	152435	152388	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	uncompr_f	0	6	97447	97401	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	static_vbp_f<vbp_l<bw, 8> >	0	6	111005	110957	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	dynamic_vbp_f<512, 64, 8>	0	6	105682	105635	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	6	160628	160580	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	6	150931	150884	1
+avx512<v512<uint64_t>>	uncompr_f	uncompr_f	0	7	465346	465296	-1
+avx512<v512<uint64_t>>	uncompr_f	static_vbp_f<vbp_l<bw, 8> >	0	7	451116	451067	1
+avx512<v512<uint64_t>>	uncompr_f	dynamic_vbp_f<512, 64, 8>	0	7	445672	445623	1
+avx512<v512<uint64_t>>	uncompr_f	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	7	558921	558872	1
+avx512<v512<uint64_t>>	uncompr_f	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	7	469181	469131	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	uncompr_f	0	7	290766	290715	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	static_vbp_f<vbp_l<bw, 8> >	0	7	219388	219338	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	dynamic_vbp_f<512, 64, 8>	0	7	220404	220353	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	7	345716	345665	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	7	263929	263876	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	uncompr_f	0	7	279736	279686	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	static_vbp_f<vbp_l<bw, 8> >	0	7	213520	213469	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	dynamic_vbp_f<512, 64, 8>	0	7	216365	216311	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	7	338836	338784	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	7	258279	258225	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	uncompr_f	0	7	156239	156186	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	static_vbp_f<vbp_l<bw, 8> >	0	7	90747	90696	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	dynamic_vbp_f<512, 64, 8>	0	7	92382	92331	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	7	218401	218349	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	7	137124	137070	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	uncompr_f	0	7	214929	214875	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	static_vbp_f<vbp_l<bw, 8> >	0	7	148819	148766	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	dynamic_vbp_f<512, 64, 8>	0	7	150485	150431	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	7	277948	277892	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	7	189481	189425	1
+avx512<v512<uint64_t>>	uncompr_f	uncompr_f	0	8	473945	473889	-1
+avx512<v512<uint64_t>>	uncompr_f	static_vbp_f<vbp_l<bw, 8> >	0	8	484109	484053	1
+avx512<v512<uint64_t>>	uncompr_f	dynamic_vbp_f<512, 64, 8>	0	8	444983	444928	1
+avx512<v512<uint64_t>>	uncompr_f	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	8	559944	559889	1
+avx512<v512<uint64_t>>	uncompr_f	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	8	469883	469826	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	uncompr_f	0	8	284556	284495	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	static_vbp_f<vbp_l<bw, 8> >	0	8	306432	306375	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	dynamic_vbp_f<512, 64, 8>	0	8	229776	229718	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	8	353352	353297	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	8	271405	271346	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	uncompr_f	0	8	286872	286815	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	static_vbp_f<vbp_l<bw, 8> >	0	8	298735	298676	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	dynamic_vbp_f<512, 64, 8>	0	8	220446	220386	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	8	339609	339550	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	8	261907	261847	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	uncompr_f	0	8	155961	155902	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	static_vbp_f<vbp_l<bw, 8> >	0	8	169918	169859	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	dynamic_vbp_f<512, 64, 8>	0	8	96403	96345	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	8	225718	225657	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	8	141355	141295	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	uncompr_f	0	8	215077	215015	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	static_vbp_f<vbp_l<bw, 8> >	0	8	228961	228900	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	dynamic_vbp_f<512, 64, 8>	0	8	154554	154493	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	8	270896	270834	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	8	193086	193026	1
+avx512<v512<uint64_t>>	uncompr_f	uncompr_f	4611686018427387904	9	465371	465309	-1
+avx512<v512<uint64_t>>	uncompr_f	static_vbp_f<vbp_l<bw, 8> >	4611686018427387904	9	483824	483762	1
+avx512<v512<uint64_t>>	uncompr_f	dynamic_vbp_f<512, 64, 8>	4611686018427387904	9	483553	483491	1
+avx512<v512<uint64_t>>	uncompr_f	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	4611686018427387904	9	566000	565940	1
+avx512<v512<uint64_t>>	uncompr_f	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	4611686018427387904	9	469326	469261	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	uncompr_f	4611686018427387904	9	293496	293434	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	static_vbp_f<vbp_l<bw, 8> >	4611686018427387904	9	299715	299652	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	dynamic_vbp_f<512, 64, 8>	4611686018427387904	9	301180	301116	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	4611686018427387904	9	345270	345206	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	4611686018427387904	9	263916	263850	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	uncompr_f	4611686018427387904	9	278810	278743	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	static_vbp_f<vbp_l<bw, 8> >	4611686018427387904	9	294909	294845	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	dynamic_vbp_f<512, 64, 8>	4611686018427387904	9	302851	302786	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	4611686018427387904	9	339284	339218	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	4611686018427387904	9	258851	258784	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	uncompr_f	4611686018427387904	9	161856	161788	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	static_vbp_f<vbp_l<bw, 8> >	4611686018427387904	9	170552	170486	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	dynamic_vbp_f<512, 64, 8>	4611686018427387904	9	172061	171997	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	4611686018427387904	9	218488	218420	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	4611686018427387904	9	137061	136994	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	uncompr_f	4611686018427387904	9	219722	219653	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	static_vbp_f<vbp_l<bw, 8> >	4611686018427387904	9	234368	234300	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	dynamic_vbp_f<512, 64, 8>	4611686018427387904	9	229824	229755	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	4611686018427387904	9	271491	271421	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	4611686018427387904	9	189489	189422	1
+avx512<v512<uint64_t>>	uncompr_f	uncompr_f	0	10	459606	459537	-1
+avx512<v512<uint64_t>>	uncompr_f	static_vbp_f<vbp_l<bw, 8> >	0	10	438990	438922	1
+avx512<v512<uint64_t>>	uncompr_f	dynamic_vbp_f<512, 64, 8>	0	10	431472	431402	1
+avx512<v512<uint64_t>>	uncompr_f	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	10	461105	461037	1
+avx512<v512<uint64_t>>	uncompr_f	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	10	457776	457706	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	uncompr_f	0	10	280206	280134	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	static_vbp_f<vbp_l<bw, 8> >	0	10	233563	233493	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	dynamic_vbp_f<512, 64, 8>	0	10	218099	218029	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	10	254239	254167	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	10	259779	259708	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	uncompr_f	0	10	282288	282214	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	static_vbp_f<vbp_l<bw, 8> >	0	10	234822	234751	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	dynamic_vbp_f<512, 64, 8>	0	10	214377	214304	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	10	248878	248807	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	10	256034	255961	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	uncompr_f	0	10	153458	153383	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	static_vbp_f<vbp_l<bw, 8> >	0	10	106426	106352	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	dynamic_vbp_f<512, 64, 8>	0	10	87820	87747	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	10	126760	126681	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	10	131409	131334	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	uncompr_f	0	10	211024	210949	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	static_vbp_f<vbp_l<bw, 8> >	0	10	154706	154632	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	dynamic_vbp_f<512, 64, 8>	0	10	138648	138573	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	10	176730	176654	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	10	178547	178470	1
+avx512<v512<uint64_t>>	uncompr_f	uncompr_f	140737488355328	11	459862	459786	-1
+avx512<v512<uint64_t>>	uncompr_f	static_vbp_f<vbp_l<bw, 8> >	140737488355328	11	449602	449527	1
+avx512<v512<uint64_t>>	uncompr_f	dynamic_vbp_f<512, 64, 8>	140737488355328	11	456209	456134	1
+avx512<v512<uint64_t>>	uncompr_f	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	140737488355328	11	461079	461004	1
+avx512<v512<uint64_t>>	uncompr_f	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	140737488355328	11	468138	468060	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	uncompr_f	140737488355328	11	282032	281956	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	static_vbp_f<vbp_l<bw, 8> >	140737488355328	11	267860	267782	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	dynamic_vbp_f<512, 64, 8>	140737488355328	11	269967	269892	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	140737488355328	11	254278	254202	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	140737488355328	11	259725	259647	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	uncompr_f	140737488355328	11	282938	282858	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	static_vbp_f<vbp_l<bw, 8> >	140737488355328	11	260776	260696	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	dynamic_vbp_f<512, 64, 8>	140737488355328	11	259500	259419	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	140737488355328	11	249371	249291	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	140737488355328	11	264740	264660	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	uncompr_f	140737488355328	11	153713	153633	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	static_vbp_f<vbp_l<bw, 8> >	140737488355328	11	137113	137033	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	dynamic_vbp_f<512, 64, 8>	140737488355328	11	137365	137285	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	140737488355328	11	126931	126850	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	140737488355328	11	131674	131591	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	uncompr_f	140737488355328	11	206643	206561	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	static_vbp_f<vbp_l<bw, 8> >	140737488355328	11	191131	191049	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	dynamic_vbp_f<512, 64, 8>	140737488355328	11	189622	189538	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	140737488355328	11	176471	176386	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	140737488355328	11	178710	178623	1
+avx512<v512<uint64_t>>	uncompr_f	uncompr_f	0	12	471719	471635	-1
+avx512<v512<uint64_t>>	uncompr_f	static_vbp_f<vbp_l<bw, 8> >	0	12	483638	483555	1
+avx512<v512<uint64_t>>	uncompr_f	dynamic_vbp_f<512, 64, 8>	0	12	487685	487603	1
+avx512<v512<uint64_t>>	uncompr_f	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	12	559163	559080	1
+avx512<v512<uint64_t>>	uncompr_f	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	12	549910	549827	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	uncompr_f	0	12	293301	293218	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	static_vbp_f<vbp_l<bw, 8> >	0	12	299847	299763	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	dynamic_vbp_f<512, 64, 8>	0	12	300873	300787	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	12	345458	345375	1
+avx512<v512<uint64_t>>	static_vbp_f<vbp_l<bw, 8> >	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	12	353100	353015	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	uncompr_f	0	12	280272	280184	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	static_vbp_f<vbp_l<bw, 8> >	0	12	297534	297447	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	dynamic_vbp_f<512, 64, 8>	0	12	295572	295484	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	12	339112	339028	1
+avx512<v512<uint64_t>>	dynamic_vbp_f<512, 64, 8>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	12	343238	343150	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	uncompr_f	0	12	155760	155672	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	static_vbp_f<vbp_l<bw, 8> >	0	12	169926	169840	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	dynamic_vbp_f<512, 64, 8>	0	12	171126	171036	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	12	218825	218737	1
+avx512<v512<uint64_t>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	12	219697	219608	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	uncompr_f	0	12	219398	219308	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	static_vbp_f<vbp_l<bw, 8> >	0	12	228200	228109	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	dynamic_vbp_f<512, 64, 8>	0	12	229878	229790	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	12	271485	271395	1
+avx512<v512<uint64_t>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	for_f<1024, 8, dynamic_vbp_f<512, 64, 8>>	0	12	276508	276416	1

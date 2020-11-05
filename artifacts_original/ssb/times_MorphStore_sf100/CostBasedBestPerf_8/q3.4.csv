@@ -1,0 +1,45 @@
+LogFilename: 2020-06-15-15:32:12_monitoringLog
+JSonLogFilename: 2020-06-15-15:32:12_monitoringLog
+[MEA]
+opName	opIdx	runtime
+query	0	1913143
+select	1	524
+select	2	503
+merge_sorted	3	181
+my_project_wit_t	4	381
+join	5	1750104
+my_project_wit_t	6	46416
+select	7	60
+select	8	29
+merge_sorted	9	11
+my_project_wit_t	10	32
+join	11	13673
+my_project_wit_t	12	50100
+my_project_wit_t	13	451
+select	14	3
+my_project_wit_t	15	4
+join	16	383
+my_project_wit_t	17	44452
+my_project_wit_t	18	372
+my_project_wit_t	19	4
+my_project_wit_t	20	12
+my_project_wit_t	21	57
+my_project_wit_t	22	2
+my_project_wit_t	23	182
+my_project_wit_t	24	4885
+my_project_wit_t	25	187
+my_project_wit_t	26	3
+my_project_wit_t	27	6
+my_project_wit_t	28	5
+group_vec	29	16
+group_vec	30	11
+group_vec	31	6
+my_project_wit_t	32	0
+agg_sum	33	0
+my_project_wit_t	34	0
+my_project_wit_t	35	0
+[RES]
+221,221,1997,451127624
+225,225,1997,479084411
+225,221,1997,426168330
+221,225,1997,390793767

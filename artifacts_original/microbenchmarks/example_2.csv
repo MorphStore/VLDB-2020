@@ -1,0 +1,8 @@
+LogFilename: 2020-06-14-11:42:30_monitoringLog
+JSonLogFilename: 2020-06-14-11:42:30_monitoringLog
+vector_extension	out_pos_f	in_data_f	operator_name	operator_class	countValues	sel	predicate	estimate	runtime:µs	check
+ps_scalar	uncompr_f	uncompr_f	select_t	uncompressed	536870912	0.0001	0	0	610291	-1
+ps_avx512	uncompr_f	uncompr_f	my_select_wit_t	uncompressed	536870912	0.0001	0	0	351707	1
+ps_avx512	uncompr_f	static_vbp_f<vbp_l<3, 8>>	my_select_wit_t	otf de/re-compression	536870912	0.0001	0	0	52869	1
+ps_avx512	uncompr_f	static_vbp_f<vbp_l<4, 8>>	select_alternative_t	specialized	536870912	0.0001	0	0	25077	1
+ps_avx512	uncompr_f	static_vbp_f<vbp_l<3, 8>>	select_alternative_t	otf morphing	536870912	0.0001	0	0	26031	1

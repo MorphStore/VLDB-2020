@@ -1,0 +1,13 @@
+LogFilename: 2020-03-08-20:18:06_monitoringLog
+JSonLogFilename: 2020-03-08-20:18:06_monitoringLog
+vector_extension	repetition	runtime:µs	runtime agg [µs]	runtime reg2ram [µs]	check
+avx512<v512<uint64_t>>	1	571967	83564	447776	1
+avx512<v512<uint64_t>>	2	554515	83564	430308	1
+avx512<v512<uint64_t>>	3	554848	83543	430676	1
+avx512<v512<uint64_t>>	4	554898	83692	430588	1
+avx512<v512<uint64_t>>	5	554563	83612	430327	1
+avx512<v512<uint64_t>>	6	568108	83632	443506	1
+avx512<v512<uint64_t>>	7	571847	83538	447736	1
+avx512<v512<uint64_t>>	8	564431	83573	440180	1
+avx512<v512<uint64_t>>	9	564995	83625	440717	1
+avx512<v512<uint64_t>>	10	563975	83568	439788	1

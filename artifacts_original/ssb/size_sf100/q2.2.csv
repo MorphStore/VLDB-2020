@@ -1,0 +1,241 @@
+LogFilename: 2020-06-01-21:33:32_monitoringLog
+JSonLogFilename: 2020-06-01-21:33:32_monitoringLog
+[MEA]
+colName	formatWithBw	formatWithoutBw	valueCount	valueCountCompr	sizeUsedByte	sizeComprByte
+X_70	uncompr_f	uncompr_f	120363761	0	962910088	0
+X_70	static_vbp_f<vbp_l<20, 8> >	static_vbp_f<vbp_l<bw, 8> >	120363761	120363520	300913288	300908800
+X_70	dynamic_vbp_f<512, 64, 8>	dynamic_vbp_f<512, 64, 8>	120363761	120363520	301154184	301143936
+X_70	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	120363761	120363008	970449416	970426752
+X_70	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	120363761	120363008	309393352	309370560
+X_149	uncompr_f	uncompr_f	56	0	448	0
+X_149	static_vbp_f<vbp_l<11, 8> >	static_vbp_f<vbp_l<bw, 8> >	56	0	1856	0
+X_149	dynamic_vbp_f<512, 64, 8>	dynamic_vbp_f<512, 64, 8>	56	0	8768	0
+X_149	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	56	0	17088	0
+X_149	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	56	0	17216	0
+X_150	uncompr_f	uncompr_f	56	0	448	0
+X_150	static_vbp_f<vbp_l<9, 8> >	static_vbp_f<vbp_l<bw, 8> >	56	0	1600	0
+X_150	dynamic_vbp_f<512, 64, 8>	dynamic_vbp_f<512, 64, 8>	56	0	8768	0
+X_150	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	56	0	17088	0
+X_150	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	56	0	17216	0
+lineorder.lo_revenue	uncompr_f	uncompr_f	600038145	0	4800305160	0
+lineorder.lo_revenue	static_vbp_f<vbp_l<24, 8> >	static_vbp_f<vbp_l<bw, 8> >	600038145	600037888	1800118792	1800113664
+lineorder.lo_revenue	dynamic_vbp_f<512, 64, 8>	dynamic_vbp_f<512, 64, 8>	600038145	600037888	1801290056	1801279680
+lineorder.lo_revenue	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	600038145	600037376	4837824136	4837801344
+lineorder.lo_revenue	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	600038145	600037376	1842300232	1842277312
+X_109_0	uncompr_f	uncompr_f	120363761	0	962910088	0
+X_109_0	static_vbp_f<vbp_l<25, 8> >	static_vbp_f<vbp_l<bw, 8> >	120363761	120363520	376141128	376136000
+X_109_0	dynamic_vbp_f<512, 64, 8>	dynamic_vbp_f<512, 64, 8>	120363761	120363520	376381384	376371136
+X_109_0	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	120363761	120363008	970449416	970426752
+X_109_0	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	120363761	120363008	249211848	249189056
+X_99	uncompr_f	uncompr_f	11270	0	90160	0
+X_99	static_vbp_f<vbp_l<21, 8> >	static_vbp_f<vbp_l<bw, 8> >	11270	11264	32304	29568
+X_99	dynamic_vbp_f<512, 64, 8>	dynamic_vbp_f<512, 64, 8>	11270	11264	36016	27648
+X_99	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	11270	11264	34032	17344
+X_99	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	11270	11264	41008	24192
+lineorder.lo_partkey	uncompr_f	uncompr_f	600038145	0	4800305160	0
+lineorder.lo_partkey	static_vbp_f<vbp_l<20, 8> >	static_vbp_f<vbp_l<bw, 8> >	600038145	600037888	1500099336	1500094720
+lineorder.lo_partkey	dynamic_vbp_f<512, 64, 8>	dynamic_vbp_f<512, 64, 8>	600038145	600037888	1501277064	1501266688
+lineorder.lo_partkey	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	600038145	600037376	4837824136	4837801344
+lineorder.lo_partkey	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	600038145	600037376	1542306504	1542283584
+part.p_partkey	uncompr_f	uncompr_f	1400000	0	11200000	0
+part.p_partkey	static_vbp_f<vbp_l<21, 8> >	static_vbp_f<vbp_l<bw, 8> >	1400000	1399808	3678720	3674496
+part.p_partkey	dynamic_vbp_f<512, 64, 8>	dynamic_vbp_f<512, 64, 8>	1400000	1399808	3425792	3415936
+part.p_partkey	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	1400000	1399808	805568	787392
+part.p_partkey	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	1400000	1399808	1779008	1760704
+X_140_0	uncompr_f	uncompr_f	11270	0	90160	0
+X_140_0	static_vbp_f<vbp_l<9, 8> >	static_vbp_f<vbp_l<bw, 8> >	11270	11264	13872	12672
+X_140_0	dynamic_vbp_f<512, 64, 8>	dynamic_vbp_f<512, 64, 8>	11270	11264	21104	12736
+X_140_0	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	11270	11264	107504	90816
+X_140_0	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	11270	11264	21872	5056
+C_144	uncompr_f	uncompr_f	7	0	56	0
+C_144	static_vbp_f<vbp_l<3, 8> >	static_vbp_f<vbp_l<bw, 8> >	7	0	440	0
+C_144	dynamic_vbp_f<512, 64, 8>	dynamic_vbp_f<512, 64, 8>	7	0	8376	0
+C_144	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	7	0	16696	0
+C_144	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	7	0	16824	0
+X_146	uncompr_f	uncompr_f	966093	0	7728744	0
+X_146	static_vbp_f<vbp_l<6, 8> >	static_vbp_f<vbp_l<bw, 8> >	966093	965632	728680	724224
+X_146	dynamic_vbp_f<512, 64, 8>	dynamic_vbp_f<512, 64, 8>	966093	965632	738152	726144
+X_146	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	966093	965632	7805736	7785408
+X_146	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	966093	965632	812584	792128
+part.p_brand	uncompr_f	uncompr_f	1400000	0	11200000	0
+part.p_brand	static_vbp_f<vbp_l<10, 8> >	static_vbp_f<vbp_l<bw, 8> >	1400000	1399808	1752576	1749760
+part.p_brand	dynamic_vbp_f<512, 64, 8>	dynamic_vbp_f<512, 64, 8>	1400000	1399808	1762368	1752512
+part.p_brand	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	1400000	1399808	11304128	11285952
+part.p_brand	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	1400000	1399808	1866496	1848192
+X_101	uncompr_f	uncompr_f	966093	0	7728744	0
+X_101	static_vbp_f<vbp_l<27, 8> >	static_vbp_f<vbp_l<bw, 8> >	966093	965632	3266152	3259008
+X_101	dynamic_vbp_f<512, 64, 8>	dynamic_vbp_f<512, 64, 8>	966093	965632	3138664	3126656
+X_101	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	966093	965632	1497384	1477056
+X_101	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	966093	965632	2105768	2085312
+X_136	uncompr_f	uncompr_f	966093	0	7728744	0
+X_136	static_vbp_f<vbp_l<24, 8> >	static_vbp_f<vbp_l<bw, 8> >	966093	965632	2903656	2896896
+X_136	dynamic_vbp_f<512, 64, 8>	dynamic_vbp_f<512, 64, 8>	966093	965632	2910824	2898816
+X_136	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	966093	965632	7805736	7785408
+X_136	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	966093	965632	2985192	2964736
+supplier.s_region	uncompr_f	uncompr_f	200000	0	1600000	0
+supplier.s_region	static_vbp_f<vbp_l<3, 8> >	static_vbp_f<vbp_l<bw, 8> >	200000	199680	77824	74880
+supplier.s_region	dynamic_vbp_f<512, 64, 8>	dynamic_vbp_f<512, 64, 8>	200000	199680	86208	75328
+supplier.s_region	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	200000	199680	1629120	1609920
+supplier.s_region	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	200000	199680	108288	88960
+C_60	uncompr_f	uncompr_f	40119	0	320952	0
+C_60	static_vbp_f<vbp_l<18, 8> >	static_vbp_f<vbp_l<bw, 8> >	40119	39936	93624	89856
+C_60	dynamic_vbp_f<512, 64, 8>	dynamic_vbp_f<512, 64, 8>	40119	39936	93496	83712
+C_60	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	40119	39936	55544	37440
+C_60	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	40119	39936	83448	65216
+C_96	uncompr_f	uncompr_f	11270	0	90160	0
+C_96	static_vbp_f<vbp_l<21, 8> >	static_vbp_f<vbp_l<bw, 8> >	11270	11264	32304	29568
+C_96	dynamic_vbp_f<512, 64, 8>	dynamic_vbp_f<512, 64, 8>	11270	11264	36016	27648
+C_96	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	11270	11264	34032	17344
+C_96	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	11270	11264	41008	24192
+C_147	uncompr_f	uncompr_f	56	0	448	0
+C_147	static_vbp_f<vbp_l<9, 8> >	static_vbp_f<vbp_l<bw, 8> >	56	0	1600	0
+C_147	dynamic_vbp_f<512, 64, 8>	dynamic_vbp_f<512, 64, 8>	56	0	8768	0
+C_147	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	56	0	17088	0
+C_147	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	56	0	17216	0
+X_64	uncompr_f	uncompr_f	120363761	0	962910088	0
+X_64	static_vbp_f<vbp_l<30, 8> >	static_vbp_f<vbp_l<bw, 8> >	120363761	120363520	451368968	451363200
+X_64	dynamic_vbp_f<512, 64, 8>	dynamic_vbp_f<512, 64, 8>	120363761	120363520	424687240	424676992
+X_64	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	120363761	120363008	112861704	112839040
+X_64	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	120363761	120363008	196553032	196530240
+lineorder.lo_orderdate	uncompr_f	uncompr_f	600038145	0	4800305160	0
+lineorder.lo_orderdate	static_vbp_f<vbp_l<25, 8> >	static_vbp_f<vbp_l<bw, 8> >	600038145	600037888	1875123656	1875118400
+lineorder.lo_orderdate	dynamic_vbp_f<512, 64, 8>	dynamic_vbp_f<512, 64, 8>	600038145	600037888	1876300744	1876290368
+lineorder.lo_orderdate	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	600038145	600037376	4837824136	4837801344
+lineorder.lo_orderdate	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	600038145	600037376	1242287816	1242264896
+lineorder.lo_suppkey	uncompr_f	uncompr_f	600038145	0	4800305160	0
+lineorder.lo_suppkey	static_vbp_f<vbp_l<18, 8> >	static_vbp_f<vbp_l<bw, 8> >	600038145	600037888	1350089608	1350085248
+lineorder.lo_suppkey	dynamic_vbp_f<512, 64, 8>	dynamic_vbp_f<512, 64, 8>	600038145	600037888	1351267592	1351257216
+lineorder.lo_suppkey	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	600038145	600037376	4837824136	4837801344
+lineorder.lo_suppkey	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	600038145	600037376	1392297160	1392274240
+date.d_year	uncompr_f	uncompr_f	2556	0	20448	0
+date.d_year	static_vbp_f<vbp_l<11, 8> >	static_vbp_f<vbp_l<bw, 8> >	2556	2048	8288	2816
+date.d_year	dynamic_vbp_f<512, 64, 8>	dynamic_vbp_f<512, 64, 8>	2556	2048	15264	2880
+date.d_year	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	2556	2048	21728	1024
+date.d_year	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	2556	2048	21472	640
+X_131	uncompr_f	uncompr_f	966093	0	7728744	0
+X_131	static_vbp_f<vbp_l<20, 8> >	static_vbp_f<vbp_l<bw, 8> >	966093	965632	2420328	2414080
+X_131	dynamic_vbp_f<512, 64, 8>	dynamic_vbp_f<512, 64, 8>	966093	965632	2297000	2284992
+X_131	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	966093	965632	563496	543168
+X_131	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	966093	965632	1235048	1214592
+X_143	uncompr_f	uncompr_f	966093	0	7728744	0
+X_143	static_vbp_f<vbp_l<3, 8> >	static_vbp_f<vbp_l<bw, 8> >	966093	965632	366184	362112
+X_143	dynamic_vbp_f<512, 64, 8>	dynamic_vbp_f<512, 64, 8>	966093	965632	376040	364032
+X_143	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	966093	965632	7805736	7785408
+X_143	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	966093	965632	450472	430016
+X_140_1	uncompr_f	uncompr_f	966093	0	7728744	0
+X_140_1	static_vbp_f<vbp_l<9, 8> >	static_vbp_f<vbp_l<bw, 8> >	966093	965632	1091176	1086336
+X_140_1	dynamic_vbp_f<512, 64, 8>	dynamic_vbp_f<512, 64, 8>	966093	965632	1100264	1088256
+X_140_1	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	966093	965632	7805736	7785408
+X_140_1	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	966093	965632	450472	430016
+X_151	uncompr_f	uncompr_f	56	0	448	0
+X_151	static_vbp_f<vbp_l<37, 8> >	static_vbp_f<vbp_l<bw, 8> >	56	0	5184	0
+X_151	dynamic_vbp_f<512, 64, 8>	dynamic_vbp_f<512, 64, 8>	56	0	8768	0
+X_151	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	56	0	17088	0
+X_151	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	56	0	17216	0
+X_132	uncompr_f	uncompr_f	966093	0	7728744	0
+X_132	static_vbp_f<vbp_l<12, 8> >	static_vbp_f<vbp_l<bw, 8> >	966093	965632	1453672	1448448
+X_132	dynamic_vbp_f<512, 64, 8>	dynamic_vbp_f<512, 64, 8>	966093	965632	1462376	1450368
+X_132	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	966093	965632	7805736	7785408
+X_132	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	966093	965632	1536808	1516352
+X_62	uncompr_f	uncompr_f	40119	0	320952	0
+X_62	static_vbp_f<vbp_l<18, 8> >	static_vbp_f<vbp_l<bw, 8> >	40119	39936	93624	89856
+X_62	dynamic_vbp_f<512, 64, 8>	dynamic_vbp_f<512, 64, 8>	40119	39936	93496	83712
+X_62	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	40119	39936	55544	37440
+X_62	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	40119	39936	83448	65216
+X_109	uncompr_f	uncompr_f	966093	0	7728744	0
+X_109	static_vbp_f<vbp_l<25, 8> >	static_vbp_f<vbp_l<bw, 8> >	966093	965632	3024488	3017600
+X_109	dynamic_vbp_f<512, 64, 8>	dynamic_vbp_f<512, 64, 8>	966093	965632	3031528	3019520
+X_109	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	966093	965632	7805736	7785408
+X_109	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	966093	965632	2019624	1999168
+X_136_1	uncompr_f	uncompr_f	966093	0	7728744	0
+X_136_1	static_vbp_f<vbp_l<24, 8> >	static_vbp_f<vbp_l<bw, 8> >	966093	965632	2903656	2896896
+X_136_1	dynamic_vbp_f<512, 64, 8>	dynamic_vbp_f<512, 64, 8>	966093	965632	2910824	2898816
+X_136_1	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	966093	965632	7805736	7785408
+X_136_1	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	966093	965632	2985192	2964736
+date.d_datekey	uncompr_f	uncompr_f	2556	0	20448	0
+date.d_datekey	static_vbp_f<vbp_l<25, 8> >	static_vbp_f<vbp_l<bw, 8> >	2556	2048	13664	6400
+date.d_datekey	dynamic_vbp_f<512, 64, 8>	dynamic_vbp_f<512, 64, 8>	2556	2048	18848	6464
+date.d_datekey	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	2556	2048	25120	4416
+date.d_datekey	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	2556	2048	24800	3968
+X_140	uncompr_f	uncompr_f	966093	0	7728744	0
+X_140	static_vbp_f<vbp_l<9, 8> >	static_vbp_f<vbp_l<bw, 8> >	966093	965632	1091176	1086336
+X_140	dynamic_vbp_f<512, 64, 8>	dynamic_vbp_f<512, 64, 8>	966093	965632	1100264	1088256
+X_140	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	966093	965632	7805736	7785408
+X_140	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	966093	965632	450472	430016
+X_136_0	uncompr_f	uncompr_f	120363761	0	962910088	0
+X_136_0	static_vbp_f<vbp_l<24, 8> >	static_vbp_f<vbp_l<bw, 8> >	120363761	120363520	361095560	361090560
+X_136_0	dynamic_vbp_f<512, 64, 8>	dynamic_vbp_f<512, 64, 8>	120363761	120363520	361334536	361324288
+X_136_0	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	120363761	120363008	970449416	970426752
+X_136_0	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	120363761	120363008	369569608	369546816
+X_142	uncompr_f	uncompr_f	966093	0	7728744	0
+X_142	static_vbp_f<vbp_l<11, 8> >	static_vbp_f<vbp_l<bw, 8> >	966093	965632	1332840	1327744
+X_142	dynamic_vbp_f<512, 64, 8>	dynamic_vbp_f<512, 64, 8>	966093	965632	1341672	1329664
+X_142	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	966093	965632	7805736	7785408
+X_142	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	966093	965632	450472	430016
+supplier.s_suppkey	uncompr_f	uncompr_f	200000	0	1600000	0
+supplier.s_suppkey	static_vbp_f<vbp_l<18, 8> >	static_vbp_f<vbp_l<bw, 8> >	200000	199680	454144	449280
+supplier.s_suppkey	dynamic_vbp_f<512, 64, 8>	dynamic_vbp_f<512, 64, 8>	200000	199680	428480	417600
+supplier.s_suppkey	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	200000	199680	131520	112320
+supplier.s_suppkey	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	200000	199680	270528	251200
+X_102	uncompr_f	uncompr_f	966093	0	7728744	0
+X_102	static_vbp_f<vbp_l<13, 8> >	static_vbp_f<vbp_l<bw, 8> >	966093	965632	1574504	1569152
+X_102	dynamic_vbp_f<512, 64, 8>	dynamic_vbp_f<512, 64, 8>	966093	965632	1583080	1571072
+X_102	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	delta_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	966093	965632	7805736	7785408
+X_102	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	for_f<1024, 8, dynamic_vbp_f<512, 64, 8> >	966093	965632	1657512	1637056
+[RES]
+66653995537,1996,255
+38506099333,1998,255
+69174346322,1992,260
+65550479248,1993,255
+68080655579,1997,259
+63753319952,1995,256
+69813519428,1993,260
+67965707654,1994,258
+37642829564,1998,256
+66773529772,1992,254
+67282047325,1993,258
+63502185362,1996,256
+66581640583,1997,254
+70585163494,1995,260
+66365786075,1995,255
+66119767409,1997,253
+65268851873,1995,257
+63384207184,1994,256
+68251839635,1996,258
+66912322920,1995,253
+38588212824,1998,257
+64161482056,1997,256
+66645966456,1993,253
+67241183414,1996,253
+67925717603,1994,259
+66326149435,1993,257
+66363416205,1995,254
+67779752323,1996,259
+66578228710,1992,253
+67865568183,1993,259
+39020620688,1998,253
+67686801034,1995,259
+67563198362,1992,258
+38959028167,1998,254
+67115945488,1997,258
+66423429836,1997,257
+67517788754,1995,258
+66243844473,1994,254
+65795836912,1994,257
+67255497037,1992,259
+66758164038,1994,253
+39360879411,1998,258
+65427674215,1996,257
+66401769135,1992,255
+66932556681,1994,255
+66404490783,1996,254
+70910604880,1994,260
+64509229295,1992,256
+65995521070,1993,254
+66455630009,1992,257
+69060752228,1997,260
+40657595007,1998,259
+40643865971,1998,260
+69319206621,1996,260
+63647417380,1993,256
+67213385009,1997,255
