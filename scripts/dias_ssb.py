@@ -204,7 +204,7 @@ def loadRuntimesMorphStore():
                 dfs.append(enrichDf(
                         csvutils.readMorphStoreCsv(os.path.join(
                                 pathTimesMorphStore,
-                                "time_sf{}_{}_{}".format(scaleFactor, cs, repIdx),
+                                "{}_{}".format(cs, repIdx),
                                 "q{}.csv".format(q)
                         )),
                         q,
@@ -511,7 +511,7 @@ if __name__ == "__main__":
     pathTimesMorphStore = os.path.join(pathArtifacts, "times_MorphStore_sf{}".format(scaleFactor))
     pathTimesMonetDB = os.path.join(pathArtifacts, "times_MonetDB_sf{}".format(scaleFactor))
     pathDataCh = os.path.join(pathArtifacts, "dc_sf{}".format(scaleFactor))
-    pathSizes = os.path.join(pathArtifacts, "size_sf{}_{}".format(scaleFactor, processingStyle))
+    pathSizes = os.path.join(pathArtifacts, "size_sf{}".format(scaleFactor))
     pathDias = os.path.join(pathArtifacts, "dias_sf{}".format(scaleFactor))
     pathBest = os.path.join(pathArtifacts, "ssb_formats_bestperf_sf{}".format(scaleFactor))
     pathWorst = os.path.join(pathArtifacts, "ssb_formats_worstperf_sf{}".format(scaleFactor))
