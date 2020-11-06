@@ -9,8 +9,8 @@ Open access via: [vldb.org](http://www.vldb.org/pvldb/vol13/p2396-damme.pdf) | a
 ## Experiments of our VLDB 2020 paper
 
 This repository contains
-- the *code* needed to reproduce our experiments (so far partly, to be finished soon)
-- all *artifacts* produced in our evaluation (coming soon)
+- the *code* needed to reproduce our experiments
+- all *artifacts* produced in our evaluation
 
 There are two kinds of experiments
 - *micro benchmarks* (Section 5.1 in the paper)
