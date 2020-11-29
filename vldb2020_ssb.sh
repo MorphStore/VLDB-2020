@@ -146,7 +146,7 @@ function generate () {
         
         print_headline2 "Determining best/worst format combinations in MorphStore"
         # TODO The reference results should not be necessary here.
-        ./greedy.sh -sf $scaleFactor -r $repetitions -ps $processingStyle -q "$queries" --findBest --findWorst --pathArtifacts $pathArtifacts --pathMal $pathMal --pathRefRes $pathRefRes
+        ./greedy.sh -sf $scaleFactor -r $repetitionsGreedy -ps $processingStyle -q "$queries" --findBest --findWorst --pathArtifacts $pathArtifacts --pathMal $pathMal --pathRefRes $pathRefRes
     fi
 
     set +e
@@ -339,6 +339,7 @@ useMorphStore="1"
 useMonetDB="1"
 processingStyle="avx512<v512<uint64_t>>"
 repetitions=10
+repetitionsGreedy=3
 queries="1.1 1.2 1.3 2.1 2.2 2.3 3.1 3.2 3.3 3.4 4.1 4.2 4.3"
 
 # -----------------------------------------------------------------------------
@@ -382,8 +383,12 @@ do
             queries=$2
             shift
             ;;
-        -r|--rep|--repetitions)
+        -r|--repetitions)
             repetitions=$2
+            shift
+            ;;
+        -g|--repetitionsGreedy)
+            repetitionsGreedy=$2
             shift
             ;;
         -ps|--processingStyle)
