@@ -27,28 +27,34 @@ The source code of MorphStore itself is already open-source: Check out our [Engi
 
 **Operating system**
 
-- GNU/Linux (we used Ubuntu 18.10 with Linux kernel 4.18.0-13-generic)
+- GNU/Linux
+  - we used a 64-bit Ubuntu 18.10 with Linux kernel 4.18.0-13-generic
+  - we also tested a 64-bit Ubuntu 20.4.1 with Linux kernel 5.4.0-48-generic
 
 **Software**
 
 *For the micro benchmarks and the Star Schema Benchmark:*
-- cmake (we tested 3.12 and 3.13)
+- cmake (we tested 3.12, 3.13, and 3.16)
 - make (we tested 4.1 and 4.2.1)
-- g++ (we used 8.3.0 and also tested 8.1.0)
-- numactl (optional)
+- g++ (we used 8.3.0 and also tested 8.1.0 and 8.4.0)
+- numactl (we used it, but the experiments can be run without, see below)
 
 *Only for the Star Schema Benchmark:*
-- python3 (we tested 3.5.2 and 3.6.7)
-- pandas (we tested 0.24.2)
+- python3 (we tested 3.5.2, 3.6.7, and 3.8.5)
+- pandas (we used 0.24.2 and also tested 1.1.4)
 
 *Only for the diagram generation:*
-- matplotlib (we used 3.0.3)
-- seaborn (we used 0.9.0)
+- matplotlib (we used 3.0.3 and also tested 3.3.3)
+- seaborn (we used 0.9.0 and also tested 0.11.0)
 
-**Hardware** (*to be stated more precisely*)
+**Hardware**
 - an Intel processor supporting AVX-512
-- about 200 GB of free disk space for the SSB base data (and some artifacts derived from it) at scale factor 100
-- at least 96 GB of main memory (ideally per socket)
+  - we used an Intel Xeon Gold 6130 (2.1 GHz, 32 KiB L1, 1 MiB L2, 22 MiB L3-cache)
+- free disk space
+  - about 134 GiB during the SSB data generation
+  - about 102 GiB after the SSB data generation
+  - this is because we derive several artifacts from the original SSB data and delete some of them during the process
+- at least 68 GiB of free main memory (ideally on one socket)
 
 ## To Re-run the Entire Evaluation
 
