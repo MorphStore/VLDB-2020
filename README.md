@@ -16,12 +16,9 @@ There are two kinds of experiments
 - *micro benchmarks* (Section 5.1 in the paper)
 - *Star Schema Benchmark* (Sections 5.2, 6, and 1 in the paper).
 
-**We are currently setting up this repository. Expect everything to be complete within the next couple of days.**
-
-The source code for conducting the experiments and visualizing the measurements is already complete.
-Only our experimental artifacts and some more documentation are still missing (see the issues in GitHub).
-
-The source code of MorphStore itself is already open-source: Check out our [Engine](https://github.com/MorphStore/Engine) and [Benchmarks](https://github.com/MorphStore/Benchmarks) repositories.
+The source code in this repository can be used to conduct all experiments in the paper.
+It includes MorphStore via git-submodules.
+The source code of MorphStore itself can be found in the [Engine](https://github.com/MorphStore/Engine) and [Benchmarks](https://github.com/MorphStore/Benchmarks) repositories.
 
 ## System Requirements
 
@@ -56,7 +53,15 @@ The source code of MorphStore itself is already open-source: Check out our [Engi
   - this is because we derive several artifacts from the original SSB data and delete some of them during the process
 - at least 68 GiB of free main memory (ideally on one socket)
 
-## To Re-run the Entire Evaluation
+## How to Obtain the Source Code
+
+```bash
+git clone --recursive https://github.com/MorphStore/VLDB-2020.git
+```
+
+We recommend to use `--recursive` to clone the git-submodules as well.
+
+## How to Re-run the Entire Evaluation
 
 ```bash
 numactl -m 0 -N 0 -- ./vldb2020_microbenchmarks.sh
