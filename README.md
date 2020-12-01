@@ -156,6 +156,37 @@ Deviating from the defaults can allow you to
 - quickly execute the entire script to test/debug it, e.g. by `./vldb2020_ssb.sh -sf 1 -q 1.1 -r 1`
 - or anything else experimental
 
-## Generated Artifacts
+## Generated Artifacts and Diagrams
 
-*Description coming soon!*
+All artifacts created by re-running the experiments are automatically stored in a directory `artifacts`.
+The artifacts of our original evaluation can be found in the directory `artifacts_original`.
+
+**Micro benchmarks**
+
+The following artifacts can be found in `artifacts/microbenchmarks`:
+
+- **diagrams for Figures 4, 5, and 6**: `figure*.pdf`
+- CSV files for Figure 4: `example_#.csv`
+- CSV files for Figure 5: `singleop_#.csv`
+- CSV files for Figure 6: `simplequery_#.csv`
+
+There are 10 instances of each CSV file, one per repetition of the experiment.
+
+**Star Schema Benchmark**
+
+The folllowing artifacts can be found in `artifacts/ssb`:
+
+- **diagrams for Figures 1, 7, 8, 9, and 10**: `dias_sf100`
+- runtimes of SSB queries in MorphStore: `times_MorphStore_sf100`
+  - subdirectories for different format combinations, numbered due to ten repetitions
+- runtimes of SSB queries in MonetDB: `times_MonetDB_sf100`
+- best format combinations determined by greedy algorithm: `ssb_formats_bestperf_sf100`
+- worst format combinations determined by greedy algorithm: `ssb_formats_worstperf_sf100`
+- data characteristics of all base and intermediate columns: `dc_sf100`
+- physical sizes of all base and intermediate columns: `size_sf100`
+- SSB base data: `data_sf100` (41 GiB)
+- profiles of compression algorithms for cost-based format selection: `compr_profiles`
+
+Most of the directories contain one CSV file per SSB query.
+Finally, two variants of the SSB base data are loaded into MonetDB.
+These reside in `MonetDB/monetdbfarm` (43 GiB, 18 GiB).
