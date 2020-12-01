@@ -32,7 +32,7 @@ function setup () {
     print_headline2 "Downloading and compiling the SSB data generator"
     
     # TODO Clone or submodule?
-    git clone https://github.com/lemire/StarSchemaBenchmark.git
+    git clone https://github.com/MorphStore/StarSchemaBenchmark.git
     mv StarSchemaBenchmark $pathDBGen
     cd $pathDBGen
     make -j8
