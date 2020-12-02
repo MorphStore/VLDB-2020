@@ -72,6 +72,10 @@ We used numactl to ensure that all memory allocation and code execution happens 
 You can omit numactl at the risk of compromising the measurements.
 Of course, you do not need numactl at all if you have a single-socket system.
 
+The entire evaluation takes approximately 5 days on our system.
+This is mostly due to the greedy search for the actual best/worst format combinations, which we use as baselines.
+Everything but this greedy search takes about 18 hours.
+
 ## Micro Benchmarks
 
 You can re-run the experiments in Section 5.1 by `numactl -m 0 -N 0 -- ./vldb_microbenchmarks.sh`.
@@ -80,9 +84,12 @@ You can re-run the experiments in Section 5.1 by `numactl -m 0 -N 0 -- ./vldb_mi
 
 This script executes the following sequence of steps:
 
-1. **compile (c)**: compiles the executables for the micro benchmarks
-2. **run (r)**: executes the micro benchmarks
-3. **visualize (v)**: generates the diagrams in the paper from the experiments' measurements
+1. **compile (c)** *(about 2 minutes)*
+  - compiles the executables for the micro benchmarks
+2. **run (r)** *(about 1 hour)*
+  - executes the micro benchmarks
+3. **visualize (v)** *(a couple of seconds)*
+  - generates the diagrams in the paper from the experiments' measurements
 
 ### Arguments
 
@@ -109,12 +116,12 @@ You can re-run the experiments in Sections 5.2, 6, and 1 in the paper by `numact
 
 This script executes the following sequence of steps:
 
-1. **setup (s)**
+1. **setup (s)** *(about 2 minutes)*
   - downloads and compiles the SSB data generator
   - downloads and compiles MonetDB
-2. **calibrate (c)**
+2. **calibrate (c)** *(about 1 hour)*
   - compiles and executes the micro benchmarks for calibrating our cost model for lightweight integer compression algorithms in MorphStore
-3. **generate (g)**
+3. **generate (g)** *(about 4.5 days, about 4 hours without greedy search)*
   - generates the raw base data
   - applies dictionary coding to all non-integer columns
   - prepares base column files for use in MorphStore
@@ -125,10 +132,10 @@ This script executes the following sequence of steps:
     - data characteristics of all base and intermediate columns
     - compressed sizes of all base and intermediate columns in all compressed formats currently supported
     - best and worst combinations of the base and intermediate columns' formats (greedy algorithm mentioned in the paper)
-4. **run (r)**
+4. **run (r)** *(about 12 hours)*
   - executes the SSB in MorphStore using different strategies to determine the compressed formats of the base columns and intermediates
   - executes the SSB in MonetDB on both instances (BIGINT and narrow)
-5. **visualize (v)**
+5. **visualize (v)** (a couple of seconds)
   - generates the diagrams in the paper (Figures 1, 7, 8, 9, 10) from the experiments' measurements
   
 ### Arguments
