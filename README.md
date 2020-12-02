@@ -34,7 +34,7 @@ The source code of MorphStore itself can be found in the [Engine](https://github
 - cmake (we tested 3.12, 3.13, and 3.16)
 - make (we tested 4.1 and 4.2.1)
 - g++ (we used 8.3.0 and also tested 8.1.0 and 8.4.0)
-- numactl (we used it, but the experiments can be run without, see below)
+- numactl (we used it, and recommend it if you have a multi-socket system)
 
 *Only for the Star Schema Benchmark:*
 - python3 (we tested 3.5.2, 3.6.7, and 3.8.5)
@@ -70,6 +70,7 @@ numactl -m 0 -N 0 -- ./vldb2020_ssb.sh
 
 We used numactl to ensure that all memory allocation and code execution happens on the same socket to exclude NUMA effects.
 You can omit numactl at the risk of compromising the measurements.
+Of course, you do not need numactl at all if you have a single-socket system.
 
 ## Micro Benchmarks
 
